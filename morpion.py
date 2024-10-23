@@ -19,6 +19,7 @@ def Morpion():
     case={i:str(i) for i in range(1,10)}
     joueur_actuel="X"
     partie_en_cour=True
+    nombre_tour=0
     print("Viens Jouer Batard")
     tableau(case)
     while partie_en_cour:
@@ -42,6 +43,9 @@ def Morpion():
 
         if Condition_Pour_Gagner(case,joueur_actuel):
             print(f"Joueur {joueur_actuel} à gagner")
+            partie_en_cour=False
+        if nombre_tour==9:
+            print("Egalité")
             partie_en_cour=False
         else:
             #alterne entre X et O si n'y a pas de gagnant
