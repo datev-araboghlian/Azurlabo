@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV - Jean Dupont</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+        }
+        img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        footer {
+            margin-top: 30px;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Datev Araboghlian</h1>
+
+
+    <section>
+        <header>
+            <h2>Informations Personnelles</h2>
+        </header>
+        <p>Adresse : 2 Rue Pierre Guys</p>
+        <p>Email : datev.arab-oghlian@laplateforme.io</p>
+        <p>Téléphone : +33 0 15 56 77 07</p>
+    </section>
+   
+    <section>
+        <header>
+            <h2>Objectif Professionnel</h2>
+        </header>
+        <p>Développeur web avec 1 an d'expérience, spécialisé en front-end, je cherche à intégrer une équipe dynamique pour contribuer à des projets innovants.</p>
+    </section>
+
+    <section>
+        <header>
+            <h2>Expérience Professionnelle</h2>
+        </header>
+        <article>
+            <h3>Développeur Front-end</h3>
+            <p>Entreprise : WebCorp</p>
+            <p>Dates : Janvier 2020 - Présent</p>
+        </article>
+        <article>
+            <h3>Développeur Junior</h3>
+            <p>Entreprise : CodeFactory</p>
+            <p>Dates : Juin 2017 - Décembre 2019</p>
+        </article>
+    </section>
+  
+    <section>
+        <header>
+            <h2>Études / Formations</h2>
+        </header>
+        <article>
+            <h3>Licence en Informatique</h3>
+            <p>Université Paris-Saclay</p>
+            <p>2014 - 2017</p>
+        </article>
+    </section>
+    
+    <section>
+        <header>
+            <h2>Mes Compétences</h2>
+        </header>
+        <ul>
+            <li><img src="/Users/datevaraboghlian/Desktop/HTML Uni/Jour 1/images/HTML.png" alt="HTML Logo"> HTML</li>
+            <li><img src="/Users/datevaraboghlian/Desktop/HTML Uni/Jour 1/images/CSS logo.png" alt="CSS Logo"> CSS</li>
+            <li><img src="/Users/datevaraboghlian/Desktop/HTML Uni/Jour 1/images/Python.png" alt="Python Logo"> Python</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Retrouvez-moi sur <a href="https://github.com/datev-araboghlian" target="_blank">GitHub</a></p>
+    </footer>
+
+    <button onclick="downloadPDF()">Télécharger en PDF</button>
+
+    <script>
+        function downloadPDF() {
+            const element = document.body;
+            
+            html2pdf()
+                .from(element)
+                .set({
+                    margin: 1,
+                    filename: 'mon-cv.pdf',
+                    html2canvas: { scale: 2 },
+                    jsPDF: { orientation: 'portrait' }
+                })
+                .save();
+        }
+    </script>
+</body>
+</html>
