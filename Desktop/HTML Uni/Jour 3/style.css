@@ -1,0 +1,126 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.nav-left ul {
+    list-style-type: none;
+}
+
+.nav-left ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-left ul li a {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-weight: bold;
+}
+
+.nav-left ul li a:hover {
+    color: #f8b400;
+}
+
+/* Search bar styling */
+.nav-right input[type="text"] {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #f8b400;
+    outline: none;
+}
+
+/* Header with title and description */
+.intro {
+    text-align: center;
+    padding-top: 30px;
+    background-color: #e0f7fa;
+    align-items: flex-end;
+
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    color: #333;
+    font-family: fantasy;
+
+}
+
+.intro p {
+    max-width: 600px;
+    margin: 10px auto;
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Horizontal line divider */
+hr {
+    border: 1px solid #333;
+    margin: 20px 0;
+}
+
+.photo-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.photo-row img {
+    width: 200px;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid #333; /* Frame */
+    padding: 5px; /* Space between image and border */
+    background-color: #fff; /* Background color for the padding */
+}
+
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #ffebee;
+}
+
+.service {
+    width: 30%;
+    text-align: center;
+}
+
+.service h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1em;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
