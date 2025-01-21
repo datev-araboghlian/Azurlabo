@@ -103,7 +103,12 @@ function createProductCard(product) {
                     <h5 class="card-title">${product.name}</h5>
                     <p class="card-text">${product.description}</p>
                     <p class="card-text"><strong>$${product.price.toLocaleString('en-US', {minimumFractionDigits: 2})}</strong></p>
-                    <button class="btn btn-primary" onclick="showProductDetails(${product.id})">View Details</button>
+                    <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary" onclick="showProductDetails(${product.id})">View Details</button>
+                        <button class="btn btn-success" onclick="addToCart(${product.id})">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
