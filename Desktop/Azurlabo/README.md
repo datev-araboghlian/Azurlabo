@@ -27,21 +27,12 @@ git clone [your-repository-url]
 npm install
 ```
 
-3. Create a `.env` file with the following variables:
-```
-PORT=3000
-SESSION_SECRET=your_session_secret
-```
-
-4. Start the server:
+3. Start the server:
 ```bash
 npm start
 ```
 
-## Security
-
-- Environment variables are used for sensitive data
-- Session management for user data
+The server will run on port 3000 by default. Visit `http://localhost:3000` in your browser to view the website.
 
 ## License
 
