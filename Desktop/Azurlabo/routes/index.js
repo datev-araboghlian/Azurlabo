@@ -13,7 +13,7 @@ router.get('/about', (req, res) => {
 
 // Shop page
 router.get('/shop', async (req, res) => {
-    // Temporary sample products
+    // Sample products
     const products = [
         {
             name: 'Sample Product 1',
@@ -27,16 +27,6 @@ router.get('/shop', async (req, res) => {
         }
     ];
     res.render('shop', { products });
-});
-
-// Payment success page
-router.get('/success', (req, res) => {
-    res.render('success', { message: 'Payment successful! Thank you for your purchase.' });
-});
-
-// Payment cancel page
-router.get('/cancel', (req, res) => {
-    res.render('cancel', { message: 'Payment was cancelled.' });
 });
 
 module.exports = router;

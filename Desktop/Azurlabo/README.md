@@ -1,11 +1,10 @@
-# Azurlabo - Dental Equipment E-commerce
+# Azurlabo - Dental Equipment Website
 
-A modern e-commerce platform specialized in dental equipment, built with Node.js, Express, and Stripe integration.
+A modern website for showcasing dental equipment, built with Node.js and Express.
 
 ## Features
 
-- Product browsing and shopping cart functionality
-- Secure payment processing with Stripe
+- Product browsing and catalog
 - Responsive design for all devices
 - User-friendly interface
 
@@ -14,7 +13,6 @@ A modern e-commerce platform specialized in dental equipment, built with Node.js
 - Node.js
 - Express.js
 - EJS templating
-- Stripe Payment Integration
 - Bootstrap for styling
 
 ## Installation
@@ -32,10 +30,7 @@ npm install
 3. Create a `.env` file with the following variables:
 ```
 PORT=3000
-MONGODB_URI=your_mongodb_uri
 SESSION_SECRET=your_session_secret
-STRIPE_SECRET_KEY=your_stripe_secret_key
-STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
 ```
 
 4. Start the server:
@@ -43,14 +38,9 @@ STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
 npm start
 ```
 
-## Payment Integration
-
-The application uses Stripe for payment processing. A simplified test implementation is available in `test-payment.js`.
-
 ## Security
 
 - Environment variables are used for sensitive data
-- Payment processing is handled securely through Stripe
 - Session management for user data
 
 ## License

@@ -6,7 +6,6 @@ const cors = require('cors');
 
 // Import routes
 const indexRoutes = require('./routes/index');
-const paymentRoutes = require('./routes/payment');
 
 const app = express();
 
@@ -29,7 +28,6 @@ app.use(session({
 
 // Routes
 app.use('/', indexRoutes);
-app.use('/api/payment', paymentRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
