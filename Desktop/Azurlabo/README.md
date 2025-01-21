@@ -1,38 +1,50 @@
 # Azurlabo - Dental Equipment Website
 
-A modern website for showcasing dental equipment, built with Node.js and Express.
+A simple and modern website for showcasing dental equipment.
 
 ## Features
 
-- Product browsing and catalog
-- Responsive design for all devices
-- User-friendly interface
+- Responsive design
+- Product catalog with categories
+- About page with company information
+- Built with pure HTML, CSS, and JavaScript
+
+## Project Structure
+
+```
+azurlabo/
+├── index.html
+├── products.html
+├── about.html
+├── css/
+│   └── style.css
+├── js/
+│   └── main.js
+└── images/
+```
 
 ## Technologies Used
 
-- Node.js
-- Express.js
-- EJS templating
-- Bootstrap for styling
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap 5
 
-## Installation
+## Setup
 
 1. Clone the repository:
 ```bash
-git clone [your-repository-url]
+git clone https://github.com/datev-araboghlian/Azurlabo.git
 ```
 
-2. Install dependencies:
-```bash
-npm install
-```
+2. Open `index.html` in your web browser
 
-3. Start the server:
-```bash
-npm start
-```
+## Usage
 
-The server will run on port 3000 by default. Visit `http://localhost:3000` in your browser to view the website.
+- Browse products by category
+- View product details
+- Learn about the company
+- Contact information available on the About page
 
 ## License
 
