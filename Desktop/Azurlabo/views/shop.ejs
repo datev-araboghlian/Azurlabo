@@ -1,0 +1,231 @@
+<%- include('layout') %>
+
+<div class="container">
+    <h1 class="mb-4">Dental Equipment Shop</h1>
+    
+    <!-- Filters -->
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <select class="form-select" id="category-filter">
+                <option value="">All Categories</option>
+                <option value="chairs">Dental Chairs</option>
+                <option value="imaging">Imaging Equipment</option>
+                <option value="instruments">Instruments</option>
+                <option value="sterilization">Sterilization</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <select class="form-select" id="price-filter">
+                <option value="">Price Range</option>
+                <option value="0-1000">$0 - $1,000</option>
+                <option value="1000-5000">$1,000 - $5,000</option>
+                <option value="5000+">$5,000+</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="row">
+        <!-- Dental Chair -->
+        <div class="col-md-4 mb-4">
+            <div class="card product-card">
+                <img src="/images/dental-chair-premium.jpg" class="card-img-top product-image" alt="Premium Dental Chair">
+                <div class="card-body">
+                    <h5 class="card-title">Premium Dental Chair</h5>
+                    <p class="card-text">Advanced positioning controls, LED lighting, and patient comfort features.</p>
+                    <p class="price">$4,999.99</p>
+                    <button class="btn btn-primary add-to-cart" 
+                            data-product-id="1"
+                            data-name="Premium Dental Chair"
+                            data-price="4999.99">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Digital X-Ray System -->
+        <div class="col-md-4 mb-4">
+            <div class="card product-card">
+                <img src="/images/xray-digital.jpg" class="card-img-top product-image" alt="Digital X-Ray System">
+                <div class="card-body">
+                    <h5 class="card-title">Digital X-Ray System</h5>
+                    <p class="card-text">High-resolution imaging system with instant results and low radiation.</p>
+                    <p class="price">$7,999.99</p>
+                    <button class="btn btn-primary add-to-cart"
+                            data-product-id="2"
+                            data-name="Digital X-Ray System"
+                            data-price="7999.99">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Autoclave Sterilizer -->
+        <div class="col-md-4 mb-4">
+            <div class="card product-card">
+                <img src="/images/autoclave.jpg" class="card-img-top product-image" alt="Autoclave Sterilizer">
+                <div class="card-body">
+                    <h5 class="card-title">Autoclave Sterilizer</h5>
+                    <p class="card-text">23L capacity with automatic sterilization cycles and LCD display.</p>
+                    <p class="price">$2,499.99</p>
+                    <button class="btn btn-primary add-to-cart"
+                            data-product-id="3"
+                            data-name="Autoclave Sterilizer"
+                            data-price="2499.99">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dental Handpiece Set -->
+        <div class="col-md-4 mb-4">
+            <div class="card product-card">
+                <img src="/images/handpiece-set.jpg" class="card-img-top product-image" alt="Dental Handpiece Set">
+                <div class="card-body">
+                    <h5 class="card-title">Dental Handpiece Set</h5>
+                    <p class="card-text">Complete set of high-speed and low-speed handpieces with LED lighting.</p>
+                    <p class="price">$1,299.99</p>
+                    <button class="btn btn-primary add-to-cart"
+                            data-product-id="4"
+                            data-name="Dental Handpiece Set"
+                            data-price="1299.99">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Intraoral Camera -->
+        <div class="col-md-4 mb-4">
+            <div class="card product-card">
+                <img src="/images/intraoral-camera.jpg" class="card-img-top product-image" alt="Intraoral Camera">
+                <div class="card-body">
+                    <h5 class="card-title">Intraoral Camera</h5>
+                    <p class="card-text">HD imaging with auto-focus and wireless connectivity.</p>
+                    <p class="price">$899.99</p>
+                    <button class="btn btn-primary add-to-cart"
+                            data-product-id="5"
+                            data-name="Intraoral Camera"
+                            data-price="899.99">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dental Light -->
+        <div class="col-md-4 mb-4">
+            <div class="card product-card">
+                <img src="/images/dental-light.jpg" class="card-img-top product-image" alt="LED Dental Light">
+                <div class="card-body">
+                    <h5 class="card-title">LED Dental Light</h5>
+                    <p class="card-text">Adjustable intensity LED light with sensor control.</p>
+                    <p class="price">$799.99</p>
+                    <button class="btn btn-primary add-to-cart"
+                            data-product-id="6"
+                            data-name="LED Dental Light"
+                            data-price="799.99">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ultrasonic Scaler -->
+        <div class="col-md-4 mb-4">
+            <div class="card product-card">
+                <img src="/images/ultrasonic-scaler.jpg" class="card-img-top product-image" alt="Ultrasonic Scaler">
+                <div class="card-body">
+                    <h5 class="card-title">Ultrasonic Scaler</h5>
+                    <p class="card-text">Advanced piezo scaler with multiple tips and water control.</p>
+                    <p class="price">$599.99</p>
+                    <button class="btn btn-primary add-to-cart"
+                            data-product-id="7"
+                            data-name="Ultrasonic Scaler"
+                            data-price="599.99">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dental Compressor -->
+        <div class="col-md-4 mb-4">
+            <div class="card product-card">
+                <img src="/images/compressor.jpg" class="card-img-top product-image" alt="Dental Compressor">
+                <div class="card-body">
+                    <h5 class="card-title">Dental Compressor</h5>
+                    <p class="card-text">Oil-free silent compressor with moisture filter.</p>
+                    <p class="price">$1,899.99</p>
+                    <button class="btn btn-primary add-to-cart"
+                            data-product-id="8"
+                            data-name="Dental Compressor"
+                            data-price="1899.99">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dental Vacuum Pump -->
+        <div class="col-md-4 mb-4">
+            <div class="card product-card">
+                <img src="/images/vacuum-pump.jpg" class="card-img-top product-image" alt="Dental Vacuum Pump">
+                <div class="card-body">
+                    <h5 class="card-title">Dental Vacuum Pump</h5>
+                    <p class="card-text">High-suction vacuum pump with noise reduction technology.</p>
+                    <p class="price">$1,499.99</p>
+                    <button class="btn btn-primary add-to-cart"
+                            data-product-id="9"
+                            data-name="Dental Vacuum Pump"
+                            data-price="1499.99">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dental Cabinet -->
+        <div class="col-md-4 mb-4">
+            <div class="card product-card">
+                <img src="/images/dental-cabinet.jpg" class="card-img-top product-image" alt="Dental Cabinet">
+                <div class="card-body">
+                    <h5 class="card-title">Mobile Dental Cabinet</h5>
+                    <p class="card-text">Stainless steel cabinet with wheels and multiple storage compartments.</p>
+                    <p class="price">$699.99</p>
+                    <button class="btn btn-primary add-to-cart"
+                            data-product-id="10"
+                            data-name="Mobile Dental Cabinet"
+                            data-price="699.99">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Shopping Cart Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Shopping Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="cart-items"></div>
+                <div class="total mt-3">
+                    <h4>Total: $<span id="cart-total">0.00</span></h4>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+                <button type="button" class="btn btn-primary" id="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+</div>
